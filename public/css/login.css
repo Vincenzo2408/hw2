@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px 'Open sans', sans-serif;
+    color: #333;
+    height: 600px;
+    background-image: url(https://www.wallpaperbetter.com/wallpaper/128/620/896/night-lights-train-station-railway-mist-monochrome-technology-1080P-wallpaper.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+	font-size: 24px;
+}
+
+form{
+    padding: 40px;
+    background: #DDD;
+    border: 4px solid #AAA;
+    width: 360px;
+    margin: 100px auto;
+}
+
+input {
+	font: 14px 'Open Sans', sans-serif;
+    border: 2px solid #ccc;
+    padding: 6px;
+    display: block;
+	margin-bottom: 10px;
+    width: 96%;
+}
+
+button {
+    font: 14px 'Open Sans', sans-serif;
+    background-color: #4285f4;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.errore{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    color: red;
+
+}
+
+.hidden{
+    display:none;
+}
+
+footer {
+    margin-top: 250px;
+    color:white;
+    text-align: center;
+}
+  
+footer p{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+@media(max-width:900px)
+{   form{
+        width: 70%;
+        padding: 5%;
+    }
+
+    input {
+        font: 14px 'Open Sans', sans-serif;
+        border: 2px solid #ccc;
+        padding: 6px;
+        display: block;
+        margin-bottom: 10px;
+        width: 93%;
+    }
+
+}

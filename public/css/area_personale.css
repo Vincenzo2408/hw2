@@ -1,0 +1,446 @@
+h2{
+    padding-top: 15px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    color: darkgreen;
+}
+
+#centro h2{
+    text-align:center;
+    color: rgb(0, 0, 0);
+    margin: 20px 300px;
+    padding: 0;
+}
+
+.errore{
+   
+    text-align:center;
+    color: red;
+}
+
+body {
+    background-color: rgb(252, 245, 235);
+    margin: 0; /*Così il sito non ha margini con gli estremi della pagina*/
+    font-style: normal;
+  }
+
+  /*zona alta*/
+  header{
+    color: black;
+    position: relative;
+    height: 400px;
+    background-image: url(https://i.pinimg.com/originals/9e/df/a3/9edfa382e60d01cfcc9122fba7d7fddd.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid white;
+  }
+  
+  header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+  }
+  
+  header strong {
+    font-family: 'Optima', sans-serif;
+    position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+    left: 800px;
+    font-size: 4.25em; /*69px*/
+    letter-spacing: 4px;
+    margin-top: 130px;
+    color:rgb(244, 244, 244);
+    text-align: center; 
+    font-style: italic; /*scrittura leggermente inclinata*/
+    background-color: rgba(149, 150, 150, 0.279);
+  }
+  
+  header nav {
+    top: 35px;
+    position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+    font-size: 0.875em; /*14px*/
+    padding: 20px;
+    height: 300px;
+  }
+  
+  #collegamenti {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* contenuto in maiuscolo */
+    text-align:center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    height: 270px;
+    
+  }
+
+a {
+    position: relative;
+    cursor: pointer; /*tipo di cursore a contatto con il blocco a*/
+    margin: 15px;
+    color: black;
+    font-weight: normal;
+
+  }
+  
+  a.bottone {
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 3px; 
+    background-color: rgba(220, 236, 247, 0.733);
+    width: 200px;
+
+  }
+  
+  a.bottone:hover{ /*cambio di colore quando si passa il cursore*/
+      padding: 10px 30px;
+      border: 2px solid white; 
+      border-radius: 3px; 
+      background-color:limegreen;
+  }
+
+
+  .contenitore{
+    margin-bottom:50px;
+}
+   
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+#sparizione{
+    height: 300px; 
+    background-color: rgba(255, 193, 22, 0.238);
+    border: 5px solid rgb(126, 128, 0);
+}
+
+#descrizione{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*i flex si posizionano proporzionali nel foglio*/
+    text-align:center;
+  }
+
+
+#descrizione div{
+    width: 350px; /*Calcola lo spessore (larghezza) delle immagini    calc(50% - 20px)*/
+    font-size: 1em;
+    background-color: rgba(54, 43, 43, 0.734);
+    margin-top:25px;
+    height: 100%;
+  }
+
+#votazione{
+    text-align:center;
+    font-size: 1em; 
+    width: 327px;
+
+}
+
+#descrizione img{
+    width: 90%;
+    height: 340px;
+    border: 6px solid rgb(14, 12, 10);
+}
+
+#votazione img{
+    width: 327px;
+    height: 340px;
+    border: 6px solid rgba(185, 118, 30);
+    margin-bottom:5px;
+}
+
+
+
+#descrizione h1{
+    font-family: Snell Roundhand, cursive;
+    color: rgb(238, 235, 227)
+}
+
+#votazione h1{
+    
+
+    color: goldenrod;
+}
+
+#descrizione p{
+    font-family: 'Times New Roman', serif; 
+    color: rgb(191, 191, 186);
+}
+
+  #descrizione span{
+      color: rgb(243, 241, 237);
+      cursor:pointer;
+  }
+
+  form{
+      margin-top:10px;
+      text-align:center;
+  }
+  form button{ 
+      background-color:lightgreen;
+      color: green;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  
+   #centro{
+      background-size: cover;
+      background-position: center;
+      width:100%;
+  }
+
+  .hidden{
+      display: none;
+  }
+
+#barra p{
+      display: inline;
+  }
+
+  #barra p{
+      font-size: 20px;
+      color: rgba(185, 118, 30);
+  }
+
+  #barra{
+      text-align:center;
+      padding-top: 10px;
+  }
+
+  #tabella{
+      margin-top:50px;
+      display: flex; 
+      flex-direction: column;
+      width: 500px;
+      text-align: center;
+  }
+
+  #tabella img{
+    width: 55%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  #flexiamo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+
+  #tabella div p{
+    display:inline;
+    flex-direction: row;
+    color:rgba(187, 149, 26, 0.544);
+  }
+
+  #tabella h1{
+        color:goldenrod;
+  }
+
+  #votazione botton{
+    background-color: rgb(228, 156, 109);
+    color: darkred;
+    cursor: pointer;
+    padding: 0 2px;
+    border: 2px solid darkred;
+
+
+  }
+
+  /*storia*/
+  #storia{
+      width: 24%;
+      border-left: 5px solid white;
+      background-color: rgba(144, 140, 140, 0.694);
+      text-align:center;
+      padding: 10px 10px;
+      height: auto;
+  }
+
+  #storia img{
+      width: 80%;
+      border: 2px solid white;
+  }
+
+  #storia p{
+      color: white;
+  }
+
+  /*zona laterale*/
+  #procedure{
+      padding-bottom: 3px;
+      border-bottom: 5px solid white;
+      border-top: 5px solid white;
+      background-color: lightgrey;
+      display: flex;
+      flex-direction: column;
+      text-align:center;
+  }
+
+  #procedure h2{
+      color: black;
+  }
+
+  /*zona finale*/
+footer {
+    background-color: rgba(128,128,128,.7);
+    color:white;
+    padding: 50px;
+    text-align: center;
+}
+
+  
+footer p{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+/*zona cellulare*/
+@media(max-width: 900px){
+    #flexiamo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #flexiamo div{
+        width: 100%;
+    }
+
+    #storia{
+       display:none;
+    }
+
+    h2{
+        padding-top: 15px; 
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 5px;
+        color: darkgreen;
+    }
+    
+    #centro h2{
+        text-align:center;
+        color: rgb(0, 0, 0);
+        margin: 20px 0px;
+        padding: 0;
+    }
+
+
+}
+
+@media(max-width: 900px){
+    #descrizione{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around; /*i flex si posizionano proporzionali nel foglio*/
+        text-align:center;
+      }
+
+      #descrizione div{
+          width: 100%;
+      }
+
+      #descrizione img{
+        width: 95%;
+        height: 300px;
+    }
+
+     
+  #centro{
+    background-image: none;
+    height: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    #collegamenti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+      
+    text-transform: uppercase; /* contenuto in maiuscolo */
+    text-align:center;  
+    height:100%;
+
+    }
+
+    p{
+        margin-bottom: 0px;
+        height: 20%;
+    }
+
+    #tabella img{
+        display: none;
+    }
+    
+
+
+header nav {
+  top: 0px;
+  position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+  font-size: 0.875em; /*14px*/
+  padding: 0px;
+  width: 100%;
+  height: 12%;
+  background-color: rgba(220, 236, 247, 0.733); 
+}
+
+a {
+  position: relative;
+  cursor: pointer; /*tipo di cursore a contatto con il blocco a*/
+  margin: 15px;
+  color: black;
+  font-weight: normal;
+}
+
+a.bottone {
+  padding: 2px 3px;
+  border: 2p solid white;
+  border-radius: none; 
+  background-color: rgba(220, 236, 247, 0.733);
+  margin-top:5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:5px;
+}
+
+a.bottone:hover{ /*cambio di colore quando si passa il cursore*/
+  padding: 2px 3px;
+  border: 2p solid white;
+  border-radius: none; 
+  background-color:limegreen;
+  margin-top:5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:5px;
+}
+
+header strong{
+    font-size: 2.5em; /*40px*/
+    left: 1%;
+    right: 2%;
+    padding-top: 0px;
+    width: 98%;
+  }
+  
+  header{
+    text-align:center;
+  }   
+}

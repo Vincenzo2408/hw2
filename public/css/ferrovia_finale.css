@@ -1,0 +1,350 @@
+body {
+  background-color: rgb(233, 230, 230);
+  margin: 0; /*Così il sito non ha margini con gli estremi della pagina*/
+  font-style: normal;
+}
+
+/*zona intestazione*/
+
+header{
+  color: black;
+  position: relative;
+  height: 400px;
+  background-image: url(https://www.frasibelle.it/foto_flickr/stazione-ferroviaria-romantica-in-bianco-e-nero.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid white;
+}
+
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+header strong {
+  font-family: 'Optima', sans-serif;
+  position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+  left: 800px;
+  font-size: 4.25em; /*69px*/
+  letter-spacing: 4px;
+  margin-top: 130px;
+  color:rgb(244, 244, 244);
+  text-align: center; 
+  font-style: italic; /*scrittura leggermente inclinata*/
+  background-color: rgba(149, 150, 150, 0.279);
+}
+
+header nav {
+  top: 35px;
+  position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+  font-size: 0.875em; /*14px*/
+  padding: 20px;
+}
+
+#collegamenti {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase; /* contenuto in maiuscolo */
+  text-align:center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*zona intestazione (ma può funzionare ovunque metta il tag a nell'html, infatti viene usato in Clicca qui! nella Zona Covid)*/
+
+a {
+  position: relative;
+  cursor: pointer; /*tipo di cursore a contatto con il blocco a*/
+  margin: 15px;
+  color: black;
+  font-weight: normal;
+}
+
+a.bottone {
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 3px; 
+  background-color: rgba(220, 236, 247, 0.733);
+}
+
+a.bottone:hover{ /*cambio di colore quando si passa il cursore*/
+    padding: 10px 30px;
+    border: 2px solid white; 
+    border-radius: 3px; 
+    background-color:limegreen;
+}
+
+/*zona centrale*/
+#benvenuto{
+  height:150px;
+}
+
+#benvenuto p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 20%;
+}
+
+#benvenuto h1 {
+  margin-bottom:23px;
+  font-size: 1.75em /*28px*/;
+  font-weight: normal;
+  color:black ;
+}
+
+section {
+  height: 565px;
+  margin-top: 100px;
+  margin-bottom:20px;
+  text-align: center;
+}
+
+#descrizione {
+  display: flex;
+  justify-content: space-around; /*i flex si posizionano proporzionali nel foglio*/
+}
+
+#descrizione div {
+  width: 390px; /*Calcola lo spessore (larghezza) delle immagini    calc(50% - 20px)*/
+  font-size: 1em;
+  height: 340px;
+}
+
+#descrizione img {
+  width: 90%;
+  height: 90%;
+  border: 6px solid rgb(23, 23, 23);
+}
+
+#descrizione img:hover{
+  opacity: 0.8;
+}
+
+#descrizione h1 {
+  margin: 19px 0px;
+  letter-spacing: 2px;
+}
+
+#vagoni {
+  font-family: 'Arial', sans-serif ;
+  color: rgb(160, 159, 158);
+  font-weight: bold;
+  font-style: italic; 
+}
+
+#tratta {
+  font-family: 'Helvetica', sans-serif;
+  color: rgb(115, 114, 114);
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+#treni {
+  font-family: 'Helvetica', sans-serif;
+  color: rgb(88, 87, 87);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*zona finale*/
+
+footer {
+  background-color: rgba(128,128,128,.7);
+  color:white;
+  padding: 50px;
+  text-align: center;
+}
+
+footer p{
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: small;
+}
+
+/*per i mobile*/
+
+@media (max-width: 900px) {
+    #collegamenti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+      
+    text-transform: uppercase; /* contenuto in maiuscolo */
+    text-align:center;  
+    }
+
+
+header nav {
+  top: 0px;
+  position: absolute; /*rispetto a header che ha posizione relativa, questo ha posizione assoluta nell'header*/
+  font-size: 0.875em; /*14px*/
+  padding: 0px;
+  width: 100%;
+  background-color: rgba(220, 236, 247, 0.733); 
+}
+
+a {
+  position: relative;
+  cursor: pointer; /*tipo di cursore a contatto con il blocco a*/
+  margin: 15px;
+  color: black;
+  font-weight: normal;
+}
+
+a.bottone {
+  padding: 2px 3px;
+  border: 2p solid white;
+  border-radius: none; 
+  background-color: rgba(220, 236, 247, 0.733);
+  margin-top:5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:5px;
+}
+
+a.bottone:hover{ /*cambio di colore quando si passa il cursore*/
+  padding: 2px 3px;
+  border: 2p solid white;
+  border-radius: none; 
+  background-color:limegreen;
+  margin-top:5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:5px;
+}
+}
+
+
+
+@media(max-width:502px)
+{
+  #benvenuto{
+    height:180px;
+  }
+
+  #benvenuto p{
+    width: 200px ;
+  }
+}
+
+@media (max-width: 900px){ /*Per la scritta rossa sotto i 900px*/
+    header strong{
+      font-size: 2.5em; /*40px*/
+      left: 8%;
+      right: 8%;
+      padding-top: 0px;
+    }
+    
+    header{
+      text-align:center;
+    }   
+}
+
+@media (max-width: 900px){
+  #descrizione{ /*metti i blocchi in colonna centrati occupando lo spazio disponibile*/
+    flex-direction:column;
+    align-items: center;
+    flex-grow: 1; 
+  }
+
+  #vagoni, #treni, #binari, #tratta{
+    font-style: normal;
+  }
+
+  #descrizione div{ /*modifica la dimensione delle immagini in colonna: 100% le immagini sono 
+  ingrandite fino al massimo di sinistra e destra, 80% genera un distanziamento dai lati*/
+  width: 80%;
+  margin-bottom: 20px;
+  }
+
+  #descrizione p{
+    padding-top: 1px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  #descrizione h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #descrizione img{
+    width: 90%;
+    height: 70%;
+  }
+
+  section {
+    margin: 25px 0px;
+    height: 1200px;
+  }
+
+  #benvenuto p{
+    text-align:center;
+    margin-bottom: 40px;
+  }
+}
+
+/*zona Covid*/
+
+#covid {
+  line-height: 20px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  font-weight: normal;
+  padding: 10px;
+  text-align:center; 
+  background-color: rgba(24, 207, 63, 0.3);
+  border:5px solid rgba(2, 27, 7, 0.3);
+  font-style: normal;
+  font-size: 1.05em; /*16,8 px*/
+  height:65%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+#covid img{
+  border: 4px solid red;
+  width: 10%;
+  height: 20%;
+}
+
+#covid a:hover{
+  color: blue;
+}
+
+@media (max-width: 900px) {
+  #covid{
+    height:100%;
+  }
+  #covid img {
+  display: none;
+  }
+}
+
+#covid h3{
+  font-size: 0.9em; /*14,4px*/
+}
+
+a.riduzione{ /*riduciamo i margini del tag a implementato in "zona intestazione"*/
+  margin: 2px;
+}
+
+/*Ho usato div per tag unici all'interno della pagina, class per una serie di elementi con caratteristiche comuni*/
+
+
+
